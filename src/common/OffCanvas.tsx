@@ -70,20 +70,6 @@ const OffCanvas = ({ setOpenMenu, openMenu }: any) => {
                       ></span>
                     ) : null}
                   </Link>
-                  {item.has_dropdown && (
-                    <ul
-                      className={`sub-menu techin-submenu ${navTitle === item.title ? "techin-open" : ""}`}
-                      style={{
-                        display: navTitle === item.title ? "block" : "none",
-                      }}
-                    >
-                      {item.submenu?.map((submenu, i) => (
-                        <li key={i}>
-                          <Link to={submenu.link}>{submenu.title}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </li>
               ))}
             </ul>
