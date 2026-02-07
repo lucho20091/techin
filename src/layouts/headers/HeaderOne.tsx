@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import useSticky from "../../hooks/use-sticky";
 import { useState } from "react";
-import menu_data from "../../data/menu-data";
 import Sidebar from "../../common/Sidebar";
 import OffCanvas from "../../common/OffCanvas";
 
